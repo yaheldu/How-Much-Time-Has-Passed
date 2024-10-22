@@ -84,10 +84,9 @@ submit_button = Button(screen, text="Submit", command=get_all_data)
 submit_button.grid(row=17, column=1)
 
 
-
-
-screen.mainloop()
-
 all_data = pd.DataFrame(data_dict)
 
 print(all_data)
+
+screen.mainloop()
+
