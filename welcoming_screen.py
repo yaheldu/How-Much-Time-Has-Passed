@@ -1,7 +1,7 @@
 from tkinter import *
 import receiving_input
-from consts import EXIT_BUTTON, SHOWING_BUTTON, ADDING_BUTTON
-from showing_data import show_all_data, save_all_data_in_excel
+from general import EXIT_BUTTON, SHOWING_BUTTON, ADDING_BUTTON
+from showing_data import show_all_data
 
 
 def create_display():
@@ -25,7 +25,6 @@ def which_pressed(button_num):
         show_all_data()
     if button_num == EXIT_BUTTON:
         welcome_screen.destroy()
-        save_all_data_in_excel() # needed to be fixed
         global run
         run = False
         return run
